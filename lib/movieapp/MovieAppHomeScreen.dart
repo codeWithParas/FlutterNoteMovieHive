@@ -24,7 +24,6 @@ class _MovieAppHomePageState extends State<MovieAppHomePage> {
   List<Movie> topRatedMovies = [];
   var IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
   var POPULAR_API = 'https://api.themoviedb.org/3/trending/movie/day?language=en-US&api_key=dee8af777f2e8990d4b19baad0388e42&page=3';
-  //var ERROR_POPULAR_API = 'https://api.themoviedb.org/trending/movie/day?language=en-US&api_key=dee8af777f2e8990d4b19baad0388e42&page=3';
 
   @override
   Widget build(BuildContext context) {
