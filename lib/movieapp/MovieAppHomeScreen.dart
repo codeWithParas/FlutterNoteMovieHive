@@ -26,11 +26,15 @@ class _MovieAppHomePageState extends State<MovieAppHomePage> {
   var POPULAR_API = 'https://api.themoviedb.org/3/trending/movie/day?language=en-US&api_key=dee8af777f2e8990d4b19baad0388e42&page=3';
 
   @override
-  Widget build(BuildContext context) {
-
+  void initState() {
+    // TODO: implement initState
     if(movies.isEmpty) {
       fetchDataFromServer();
     }
+  }
+
+  @override
+  Widget build(BuildContext context) {
 
     return Scaffold(
       appBar: AppBar(
