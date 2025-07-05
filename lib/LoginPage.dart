@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_jan_batch/stepcount/StepCountScreen.dart';
 
 import 'movieapp/MovieAppHomeScreen.dart';
 import 'notepad/screens/HomePageScreen.dart';
@@ -68,7 +69,8 @@ class LoginScreen extends StatelessWidget {
                           Navigator.push(
                               context,
                               //MaterialPageRoute(builder: (context) => const HomePageScreen())
-                              MaterialPageRoute(builder: (context) => const MovieAppHomePage())
+                              //MaterialPageRoute(builder: (context) => const MovieAppHomePage())
+                              MaterialPageRoute(builder: (context) => const StepCountScreen())
                           );
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
